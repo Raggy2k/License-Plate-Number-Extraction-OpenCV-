@@ -20,7 +20,7 @@ mask = np.ones((height, width), dtype=np.uint8) * 255  # Create a white mask
 cv.rectangle(mask, (0, 0), (width, int(height*0.1)), 0, -1)  # Black out top part
 cv.rectangle(mask, (0, int(height*0.855)), (width, height), 0, -1)  # Black out bottom part
 cv.rectangle(mask, (0, 0), (int(width * 0.12), height), 0, -1)  # Black out left side
-cv.rectangle(mask,(int(width*0.95),0),(width,height),0,-1)
+cv.rectangle(mask,(int(width*0.95),0),(width,height),0,-1) # Black out Right side
 
 # Apply mask to image
 masked_img = cv.bitwise_and(gray, mask)
