@@ -23,7 +23,7 @@
 
   ### Step #5: Adaptive Thresholding
 
-  > Set a threshold value and perform thresholding. so that we can seperate the main object 
+  > perform adaptive thresholding (the threshold value is determined by the neighbouring pixels). so that we can seperate the main object 
 from the background.
 
   ### Step #6: Erosion
