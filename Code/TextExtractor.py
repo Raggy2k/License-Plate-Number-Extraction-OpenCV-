@@ -42,9 +42,6 @@ dilated_img = cv.dilate(eroded_img, kernel, iterations=3)
 text = pyt.image_to_string(dilated_img, config='--psm 7 --oem 3') #psm 7 for single line of text 
 print("\033[92m License Plate Number: \033[93m", text,"\033[0m")
 
-
-
-cv.imshow('License Plate',eroded_img)
-#cv.imshow('License Plate',dilated_img)
+cv.imshow('License Plate',dilated_img)
 cv.waitKey(0)
 cv.destroyAllWindows()
